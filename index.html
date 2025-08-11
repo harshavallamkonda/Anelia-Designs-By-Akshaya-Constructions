@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anelia Designs - Premier Construction & Interior Design Company in Bangalore</title>
+    <meta name="description" content="Anelia Designs is Bangalore's premier construction and interior design company. We create exceptional homes with quality construction and stunning interiors since 1997.">
+    <meta name="keywords" content="construction company bangalore, interior design bangalore, home construction, residential construction, commercial construction, anelia designs">
+    <meta name="author" content="Anelia Designs">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Anelia Designs - Premier Construction & Interior Design Company">
+    <meta property="og:description" content="Bangalore's premier construction and interior design company. We create exceptional homes with quality construction and stunning interiors.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aneliadesigns.com">
+    <meta property="og:image" content="https://aneliadesigns.com/anelia-logo-optimized.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anelia Designs - Premier Construction & Interior Design Company">
+    <meta name="twitter:description" content="Bangalore's premier construction and interior design company. We create exceptional homes with quality construction and stunning interiors.">
+    <meta name="twitter:image" content="https://aneliadesigns.com/anelia-logo-optimized.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="anelia-logo-optimized.png" as="image">
+    <link rel="preload" href="hero_background.mp4" as="video" type="video/mp4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ConstructionCompany",
+        "name": "Anelia Designs",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6, N Park Rd, Nehru Nagar",
+            "addressLocality": "Bengaluru",
+            "addressRegion": "Karnataka",
+            "postalCode": "560020",
+            "addressCountry": "IN"
+        },
+        "telephone": "+919108867676",
+        "email": "sales@aneliadesign.com",
+        "url": "https://aneliadesigns.com",
+        "logo": "https://aneliadesigns.com/anelia-logo-optimized.png",
+        "sameAs": [
+            "https://www.instagram.com/aneliadesign",
+            "https://www.linkedin.com/company/anelia-design-studio-akshaya-constructions/"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <img src="anelia-logo-optimized.png" alt="Anelia Designs" class="logo">
+                    <h1 class="brand-text">Anelia Designs</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu desktop-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="btn-primary" onclick="window.open('tel:+919108867676', '_self')">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        Call Now
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" class="nav-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" class="nav-link" onclick="closeMobileMenu()">About</a>
+                <a href="#services" class="nav-link" onclick="closeMobileMenu()">Services</a>
+                <a href="#projects" class="nav-link" onclick="closeMobileMenu()">Projects</a>
+                <a href="#contact" class="nav-link" onclick="closeMobileMenu()">Contact</a>
+                <button class="btn-primary" onclick="window.open('tel:+919108867676', '_self')">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    Call Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay loop muted playsinline preload="metadata" class="hero-video">
+            <source src="hero_background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Crafting Exceptional Living Spaces</h1>
+                <h2 class="hero-subtitle">
+                    Bangalore's premier construction and interior design company. 
+                    We create exceptional homes with quality construction and stunning interiors.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">About Anelia Designs</span>
+                <h2 class="section-title">
+                    Your Trusted Partner in <span class="text-gradient">Construction & Design</span>
+                </h2>
+                <p class="section-description">
+                    With years of experience in Bangalore's construction industry, we specialize in creating 
+                    beautiful homes that combine quality construction with stunning interior design.
+                </p>
+            </header>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expert Team</h3>
+                    <p class="feature-description">
+                        Licensed architects, skilled contractors, and creative interior designers working together.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quality Assurance</h3>
+                    <p class="feature-description">
+                        Premium materials, meticulous craftsmanship, and rigorous quality checks at every stage.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Timely Delivery</h3>
+                    <p class="feature-description">
+                        Efficient project management ensuring on-time completion without compromising quality.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-title">Why Choose Anelia Designs?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">End-to-End Solutions</h4>
+                                <p class="benefit-description">From architectural design to interior finishing, we handle everything.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Transparent Pricing</h4>
+                                <p class="benefit-description">Clear, upfront pricing with no hidden costs or surprises.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Local Expertise</h4>
+                                <p class="benefit-description">Deep understanding of Bangalore's building regulations and climate.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">10-Year Warranty</h4>
+                                <p class="benefit-description">Comprehensive warranty on structural work and waterproofing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/construction1-B7wGf-A0.jpg" alt="Modern construction project" class="rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Our Services</span>
+                <h2 class="section-title">
+                    Complete <span class="text-gradient">Construction & Interior</span> Solutions
+                </h2>
+                <p class="section-description">
+                    From foundation to finishing touches, we provide comprehensive services 
+                    to bring your dream home to life.
+                </p>
+            </header>
+
+            <div class="services-grid">
+                <!-- Construction Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/construction2-NEe2DUJe.jpg" alt="Construction Services" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Construction Services</h3>
+                        <p class="service-description">Complete construction solutions for your dream home</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Residential Construction</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Commercial Construction</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Renovation & Remodeling</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Project Management</span>
+                            </li>
+                        </ul>
+                        <button class="view-packages-btn" data-target="construction-packages-section">
+                            View Packages
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interior Design Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="assets/interior1-BxnTRnEN.jpg" alt="Interior Design Services" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Interior Design Services</h3>
+                        <p class="service-description">Transform your space with our creative interior solutions</p>
+                        <ul class="service-features">
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Space Planning</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Custom Furniture</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Lighting Design</span>
+                            </li>
+                            <li class="service-feature">
+                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                                </svg>
+                                <span>Color Consultation</span>
+                            </li>
+                        </ul>
+                        <button class="view-packages-btn" data-target="interior-packages-section">
+                            View Packages
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Construction Packages Section (Hidden by default) -->
+    <section id="construction-packages-section" class="section packages-section hidden">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Construction Packages</span>
+                <h2 class="section-title">
+                    Our <span class="text-gradient">Construction</span> Packages
+                </h2>
+                <p class="section-description">
+                    Choose from our comprehensive construction packages designed to meet your specific needs and budget.
+                </p>
+            </header>
+
+            <div class="packages-grid">
+                <!-- Basic Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Basic Package</h3>
+                        <div class="package-price">₹1,599/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-structure')">
+                                <span>Structure</span>
+                                <span class="dropdown-icon" id="basic-structure-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-structure">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Steel (JSW/TATA/VIZAG)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Cement (ACC/Ultratech)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Concrete M20 grade</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Machine cut solid blocks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="basic-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Granite platform</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Stainless steel sink</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to 2 feet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="basic-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Anti-skid tiles</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to 7 feet</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Sanitary ware (Hindware)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-flooring')">
+                                <span>Flooring</span>
+                                <span class="dropdown-icon" id="basic-flooring-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-flooring">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Vitrified tiles</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Skirting included</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-electrical')">
+                                <span>Electrical</span>
+                                <span class="dropdown-icon" id="basic-electrical-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-electrical">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Copper wiring (Finolex)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Modular switches (Legrand)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>LED lights</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('basic-painting')">
+                                <span>Painting</span>
+                                <span class="dropdown-icon" id="basic-painting-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="basic-painting">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Primer + 2 coats</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Asian Paints Tractor Emulsion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Premium Package</h3>
+                        <div class="package-price">₹1,899/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-structure')">
+                                <span>Structure</span>
+                                <span class="dropdown-icon" id="premium-structure-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-structure">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Steel (JSW/TATA/VIZAG)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Cement (ACC/Ultratech)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Concrete M25 grade</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Machine cut solid blocks</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Waterproofing included</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="premium-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Granite platform with sink</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Stainless steel sink</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to 2 feet</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Dado tiles</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="premium-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Anti-skid tiles</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to 7 feet</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Sanitary ware (Hindware/Cera)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>CP fittings (Jaquar)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-flooring')">
+                                <span>Flooring</span>
+                                <span class="dropdown-icon" id="premium-flooring-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-flooring">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Vitrified tiles (800x800)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Skirting included</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Staircase granite</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-electrical')">
+                                <span>Electrical</span>
+                                <span class="dropdown-icon" id="premium-electrical-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-electrical">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Copper wiring (Finolex)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Modular switches (Legrand)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>LED lights & fans</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>TV & telephone points</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-painting')">
+                                <span>Painting</span>
+                                <span class="dropdown-icon" id="premium-painting-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-painting">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Primer + 2 coats</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Asian Paints Royale</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Texture painting in living room</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Luxury Package</h3>
+                        <div class="package-price">₹2,299/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-structure')">
+                                <span>Structure</span>
+                                <span class="dropdown-icon" id="luxury-structure-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-structure">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Steel (JSW/TATA/VIZAG)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Cement (ACC/Ultratech)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Concrete M30 grade</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>AAC blocks</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Complete waterproofing</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Earthquake resistant design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="luxury-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Granite platform with sink</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Stainless steel sink</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to ceiling</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Modular kitchen base units</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Chimney provision</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="luxury-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium anti-skid tiles</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall tiles up to ceiling</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Sanitary ware (Kohler/Jaquar)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium CP fittings</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Shower cubicle</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-flooring')">
+                                <span>Flooring</span>
+                                <span class="dropdown-icon" id="luxury-flooring-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-flooring">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Vitrified tiles (1200x600)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wooden flooring in bedrooms</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Granite skirting</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Marble staircase</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-electrical')">
+                                <span>Electrical</span>
+                                <span class="dropdown-icon" id="luxury-electrical-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-electrical">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Copper wiring (Havells)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium switches (Schneider)</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Designer LED lights</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Home automation ready</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Inverter provision</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-painting')">
+                                <span>Painting</span>
+                                <span class="dropdown-icon" id="luxury-painting-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-painting">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Primer + 3 coats</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Asian Paints Royale Luxury</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Texture & designer painting</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Exterior weather shield</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Packages Section (Hidden by default) -->
+    <section id="interior-packages-section" class="section packages-section hidden">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Interior Design Packages</span>
+                <h2 class="section-title">
+                    Our <span class="text-gradient">Interior Design</span> Packages
+                </h2>
+                <p class="section-description">
+                    Transform your space with our comprehensive interior design packages tailored to your style and budget.
+                </p>
+            </header>
+
+            <div class="packages-grid">
+                <!-- Essential Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Essential Package</h3>
+                        <div class="package-price">₹899/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('essential-living')">
+                                <span>Living Room</span>
+                                <span class="dropdown-icon" id="essential-living-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="essential-living">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>TV unit design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Sofa set arrangement</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Curtain design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Basic lighting</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('essential-bedroom')">
+                                <span>Bedroom</span>
+                                <span class="dropdown-icon" id="essential-bedroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="essential-bedroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wardrobe design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Bed design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Study table</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Basic storage solutions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('essential-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="essential-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="essential-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Modular kitchen base</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall cabinets</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Counter top design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Basic accessories</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('essential-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="essential-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="essential-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Vanity design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Mirror & lighting</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Storage solutions</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Accessories</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Premium Package</h3>
+                        <div class="package-price">₹1,299/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-living')">
+                                <span>Living Room</span>
+                                <span class="dropdown-icon" id="premium-living-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-living">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Custom TV unit with storage</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Designer sofa arrangement</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium curtains & blinds</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Ambient lighting design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Wall art & decor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-bedroom')">
+                                <span>Bedroom</span>
+                                <span class="dropdown-icon" id="premium-bedroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-bedroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Walk-in wardrobe</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Custom bed with storage</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Study table with storage</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Dressing table</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium bedding & decor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="premium-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium modular kitchen</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Soft-close mechanisms</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Quartz counter top</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Built-in appliances provision</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium accessories</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('premium-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="premium-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="premium-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Designer vanity with storage</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>LED mirror with lighting</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium storage solutions</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Shower cubicle design</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium accessories</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Package -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-title">Luxury Package</h3>
+                        <div class="package-price">₹1,799/sq ft</div>
+                        <p class="package-note">*Excluding GST</p>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-living')">
+                                <span>Living Room</span>
+                                <span class="dropdown-icon" id="luxury-living-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-living">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury entertainment unit</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Designer furniture set</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Motorized curtains</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Smart lighting system</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium wall treatments</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury decor & art</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-bedroom')">
+                                <span>Bedroom</span>
+                                <span class="dropdown-icon" id="luxury-bedroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-bedroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury walk-in wardrobe</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Designer bed with headboard</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Executive study setup</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury dressing area</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium textiles & decor</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Smart home integration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-kitchen')">
+                                <span>Kitchen</span>
+                                <span class="dropdown-icon" id="luxury-kitchen-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-kitchen">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury modular kitchen</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium hardware & fittings</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Imported counter tops</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Built-in appliances</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Smart kitchen features</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury accessories</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="package-item">
+                            <button class="package-item-btn" onclick="toggleDropdown('luxury-bathroom')">
+                                <span>Bathroom</span>
+                                <span class="dropdown-icon" id="luxury-bathroom-icon">+</span>
+                            </button>
+                            <div class="package-dropdown" id="luxury-bathroom">
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury vanity with marble top</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Smart mirror with features</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury storage solutions</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Premium shower system</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Luxury fixtures & fittings</span>
+                                </div>
+                                <div class="dropdown-item">
+                                    <span class="bullet"></span>
+                                    <span>Spa-like amenities</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Our Projects</span>
+                <h2 class="section-title">
+                    Recent <span class="text-gradient">Projects</span>
+                </h2>
+                <p class="section-description">
+                    Explore our portfolio of completed projects that showcase our expertise 
+                    in construction and interior design.
+                </p>
+            </header>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/construction1-B7wGf-A0.jpg" alt="Modern Villa Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Modern Villa in Whitefield</h3>
+                        <p class="project-description">
+                            A stunning 4-bedroom villa featuring contemporary design with premium finishes 
+                            and smart home integration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/interior2-nIWsTie3.jpg" alt="Luxury Apartment Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Luxury Apartment in Koramangala</h3>
+                        <p class="project-description">
+                            Complete interior transformation of a 3-bedroom apartment with modern 
+                            aesthetics and functional design.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/construction3-B8-vj5jX.jpg" alt="Commercial Space Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Commercial Office in Electronic City</h3>
+                        <p class="project-description">
+                            Professional office space design with modern amenities and 
+                            efficient space utilization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">Contact Us</span>
+                <h2 class="section-title">
+                    Let's Build Your <span class="text-gradient">Dream Home</span>
+                </h2>
+                <p class="section-description">
+                    Ready to start your construction or interior design project? 
+                    Get in touch with us today for a free consultation.
+                </p>
+            </header>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Phone</h3>
+                            <a href="tel:+919108867676" class="contact-link">+91 91088 67676</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Email</h3>
+                            <a href="mailto:sales@aneliadesign.com" class="contact-link">sales@aneliadesign.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="contact-title">Address</h3>
+                            <p class="contact-link">
+                                6, N Park Rd, Nehru Nagar<br>
+                                Bengaluru, Karnataka 560020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form class="form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Required</label>
+                            <select id="service" name="service" class="form-input" required>
+                                <option value="">Select a service</option>
+                                <option value="construction">Construction</option>
+                                <option value="interior">Interior Design</option>
+                                <option value="both">Both Construction & Interior</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-input" placeholder="Tell us about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary form-submit">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="anelia-logo-optimized.png" alt="Anelia Designs" class="footer-logo">
+                        <h3 class="footer-brand-text">Anelia Designs</h3>
+                    </div>
+                    <p class="footer-description">
+                        Creating exceptional living spaces with quality construction and stunning interior design since 1997.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aneliadesign" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/anelia-design-studio-akshaya-constructions/" target="_blank" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services" class="footer-link">Construction</a></li>
+                        <li><a href="#services" class="footer-link">Interior Design</a></li>
+                        <li><a href="#services" class="footer-link">Renovation</a></li>
+                        <li><a href="#services" class="footer-link">Project Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                        <li><a href="tel:+919108867676" class="footer-link">Call Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <p class="footer-contact-item">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            +91 91088 67676
+                        </p>
+                        <p class="footer-contact-item">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            sales@aneliadesign.com
+                        </p>
+                        <p class="footer-contact-item">
+                            <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            6, N Park Rd, Nehru Nagar, Bengaluru
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <p class="footer-copyright">
+                    © 2025 Anelia Designs — Where ideas dress up and go out in style.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919108867676" target="_blank" class="whatsapp-float">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.min.js"></script>
+</body>
+</html>
+
