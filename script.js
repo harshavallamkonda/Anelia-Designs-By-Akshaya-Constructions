@@ -3,11 +3,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.toggleMobileMenu = function() {
         const mobileMenu = document.getElementById("mobileMenu");
         mobileMenu.classList.toggle("active");
+        // toggle hamburger -> X visual state
+        const btn = document.querySelector('.mobile-menu-btn');
+        if (btn) {
+            btn.classList.toggle('open');
+            const expanded = btn.classList.contains('open');
+            btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        }
     };
 
     window.closeMobileMenu = function() {
         const mobileMenu = document.getElementById("mobileMenu");
         mobileMenu.classList.remove("active");
+        const btn = document.querySelector('.mobile-menu-btn');
+        if (btn) {
+            btn.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
     };
 
     // Smooth scrolling for navigation links

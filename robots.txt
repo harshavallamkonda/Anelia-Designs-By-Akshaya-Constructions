@@ -1,0 +1,13 @@
+User-agent: *
+# Allow everything by default; primary pages are listed in the sitemap
+Allow: /
+
+# Canonical sitemap location (replace with your production domain if different)
+Sitemap: https://aneliadesigns.com/sitemap.xml
+
+# Optional: block known useless crawl paths (no admin paths on this static site)
+# Disallow: /cgi-bin/
+# Disallow: /wp-admin/
+
+# Useful hints for crawlers
+# Last updated: 2025-08-20

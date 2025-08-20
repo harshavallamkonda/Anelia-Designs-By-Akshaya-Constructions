@@ -313,12 +313,20 @@ img[loading="lazy"].loaded {
     content: '';
     position: absolute;
     inset: -6px;
-    z-index: -1;
-    border-radius: calc(var(--radius) * 1.1);
-    background: linear-gradient(90deg, rgba(192,160,128,0.08), rgba(160,128,96,0.06));
-    filter: blur(6px);
+
+/* hamburger -> X when menu is open */
+.mobile-menu-btn.open .hamburger {
+    background-color: var(--primary);
+}
+.mobile-menu-btn.open .hamburger:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+.mobile-menu-btn.open .hamburger:nth-child(2) {
     opacity: 0;
-    transition: opacity 220ms ease;
+    transform: scaleX(0);
+}
+.mobile-menu-btn.open .hamburger:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .badge:hover {
@@ -1009,6 +1017,14 @@ img[loading="lazy"].loaded {
     
     .mobile-menu.active {
         display: flex;
+    }
+    /* make call button compact in mobile menu and avoid full-width stretching */
+    .mobile-menu.active .btn-primary,
+    .mobile-menu .btn-primary {
+        width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+        align-self: flex-start;
     }
     
     .about-content {
