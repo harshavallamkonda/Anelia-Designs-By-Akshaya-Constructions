@@ -41,23 +41,25 @@ document.addEventListener("DOMContentLoaded", function() {
     window.togglePackagesSection = function(targetId) {
         const constructionPackages = document.getElementById("construction-packages-section");
         const interiorPackages = document.getElementById("interior-packages-section");
+        // If target is already visible, toggle it closed
+        const targetSection = document.getElementById(targetId);
+        if (!targetSection) return;
 
-        // Hide both sections first
+        const isHidden = targetSection.classList.contains('hidden');
+
+        // Hide both sections first to ensure only one is visible at a time
         constructionPackages.classList.add("hidden");
         interiorPackages.classList.add("hidden");
 
-        // Show the target section
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-            targetSection.classList.remove("hidden");
-            
-            // Scroll to the packages section after showing it
+        if (isHidden) {
+            // Show the requested section
+            targetSection.classList.remove('hidden');
+            // Scroll to it after a small delay for smoothness
             setTimeout(() => {
-                targetSection.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
+        } else {
+            // It was visible — we've hidden it already, so do nothing further (i.e., close)
         }
     };
 
@@ -69,25 +71,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Contact form submission
+    // Contact form submission placeholder (EmailJS handler is attached directly in index.html)
     window.handleFormSubmit = function(event) {
+        // no-op to avoid duplicate behavior; EmailJS submit handler handles the form
         event.preventDefault();
-        
-        const formData = new FormData(event.target);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const phone = formData.get('phone');
-        const service = formData.get('service');
-        const message = formData.get('message');
-        
-        // Create email body
-        const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AService: ${service}%0D%0AMessage: ${message}`;
-        
-        // Open email client
-        window.location.href = `mailto:sales@aneliadesign.com?subject=Website Inquiry from ${name}&body=${emailBody}`;
     };
 
-    // Navbar background on scroll
+    // Navbar background on scroll + scroll-driven glow for CTAs
+    // Use rAF and a short timeout to keep this handler performant.
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
         if (window.scrollY > 50) {
@@ -95,7 +86,22 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             navbar.style.background = 'rgba(255, 255, 255, 0.8)';
         }
-    });
+
+        // Scroll-driven glow: add a lightweight body class while scrolling.
+        // Debounced removal after short idle to avoid layout thrash.
+        if (!window._isScrollTicking) {
+            window._isScrollTicking = true;
+            window.requestAnimationFrame(() => {
+                document.body.classList.add('scroll-glow');
+                window._isScrollTicking = false;
+            });
+        }
+
+        clearTimeout(window._scrollGlowTimeout);
+        window._scrollGlowTimeout = setTimeout(() => {
+            document.body.classList.remove('scroll-glow');
+        }, 180);
+    }, { passive: true });
 
     // Add loading animation for images
     const images = document.querySelectorAll('img');
@@ -138,4 +144,6 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(el);
     });
 });
+
+
 

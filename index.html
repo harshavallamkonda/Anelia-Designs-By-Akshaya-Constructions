@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anelia Designs - Premier Construction & Interior Design Company in Bangalore</title>
-    <meta name="description" content="Anelia Designs is Bangalore's premier construction and interior design company. We create exceptional homes with quality construction and stunning interiors since 1997.">
+    <meta name="description" content="Anelia Designs is Bangalore's premier construction and interior design company. We create exceptional homes with quality construction and stunning interiors since 2021.">
     <meta name="keywords" content="construction company bangalore, interior design bangalore, home construction, residential construction, commercial construction, anelia designs">
     <meta name="author" content="Anelia Designs">
     
@@ -29,9 +29,19 @@
     <link rel="preload" href="hero_background.mp4" as="video" type="video/mp4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Load Noto Sans (body) and Quicksand (headings) with swap and preload pattern for performance -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <!-- Load Merriweather for hero subtitles -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- NT Epika removed - using Quicksand for hero titles -->
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.min.css">
@@ -74,9 +84,10 @@
                 <!-- Desktop Menu -->
                 <div class="nav-menu desktop-menu">
                     <a href="#home" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
+
                     <a href="#services" class="nav-link">Services</a>
                     <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#about" class="nav-link">About</a>
                     <a href="#contact" class="nav-link">Contact</a>
                     <button class="btn-primary" onclick="window.open('tel:+919108867676', '_self')">
                         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -121,124 +132,15 @@
         
         <div class="hero-content">
             <div class="hero-text">
-                <h1 class="hero-title">Crafting Exceptional Living Spaces</h1>
+                <h1 class="hero-title">Exceptional Spaces, Inspired Living</h1>
                 <h2 class="hero-subtitle">
-                    Bangalore's premier construction and interior design company. 
-                    We create exceptional homes with quality construction and stunning interiors.
+                    Transforming spaces through expert construction and innovative interior design, creating functional and inspiring environments
                 </h2>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <header class="section-header">
-                <span class="badge">About Anelia Designs</span>
-                <h2 class="section-title">
-                    Your Trusted Partner in <span class="text-gradient">Construction & Design</span>
-                </h2>
-                <p class="section-description">
-                    With years of experience in Bangalore's construction industry, we specialize in creating 
-                    beautiful homes that combine quality construction with stunning interior design.
-                </p>
-            </header>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Expert Team</h3>
-                    <p class="feature-description">
-                        Licensed architects, skilled contractors, and creative interior designers working together.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="8" r="7"></circle>
-                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Quality Assurance</h3>
-                    <p class="feature-description">
-                        Premium materials, meticulous craftsmanship, and rigorous quality checks at every stage.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12,6 12,12 16,14"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Timely Delivery</h3>
-                    <p class="feature-description">
-                        Efficient project management ensuring on-time completion without compromising quality.
-                    </p>
-                </div>
-            </div>
-
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-title">Why Choose Anelia Designs?</h3>
-                    <div class="benefits-list">
-                        <div class="benefit-item">
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                            </svg>
-                            <div>
-                                <h4 class="benefit-title">End-to-End Solutions</h4>
-                                <p class="benefit-description">From architectural design to interior finishing, we handle everything.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                            </svg>
-                            <div>
-                                <h4 class="benefit-title">Transparent Pricing</h4>
-                                <p class="benefit-description">Clear, upfront pricing with no hidden costs or surprises.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                            </svg>
-                            <div>
-                                <h4 class="benefit-title">Local Expertise</h4>
-                                <p class="benefit-description">Deep understanding of Bangalore's building regulations and climate.</p>
-                            </div>
-                        </div>
-                        <div class="benefit-item">
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                            </svg>
-                            <div>
-                                <h4 class="benefit-title">10-Year Warranty</h4>
-                                <p class="benefit-description">Comprehensive warranty on structural work and waterproofing.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="assets/construction1-B7wGf-A0.jpg" alt="Modern construction project" class="rounded-image">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Services Section -->
     <section id="services" class="section services-section">
@@ -364,7 +266,7 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h3 class="package-title">Basic Package</h3>
-                        <div class="package-price">₹1,599/sq ft</div>
+                        <div class="package-price">₹2,030/sq ft</div>
                         <p class="package-note">*Excluding GST</p>
                     </div>
                     <div class="package-content">
@@ -496,7 +398,7 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h3 class="package-title">Premium Package</h3>
-                        <div class="package-price">₹1,899/sq ft</div>
+                        <div class="package-price">₹2,350/sq ft</div>
                         <p class="package-note">*Excluding GST</p>
                     </div>
                     <div class="package-content">
@@ -652,7 +554,7 @@
                 <div class="package-card">
                     <div class="package-header">
                         <h3 class="package-title">Luxury Package</h3>
-                        <div class="package-price">₹2,299/sq ft</div>
+                        <div class="package-price">₹2,685/sq ft</div>
                         <p class="package-note">*Excluding GST</p>
                     </div>
                     <div class="package-content">
@@ -854,11 +756,11 @@
                     </div>
                     <div class="package-content">
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('essential-living')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-essential-living')">
                                 <span>Living Room</span>
-                                <span class="dropdown-icon" id="essential-living-icon">+</span>
+                                <span class="dropdown-icon" id="interior-essential-living-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="essential-living">
+                            <div class="package-dropdown" id="interior-essential-living">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>TV unit design</span>
@@ -879,11 +781,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('essential-bedroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-essential-bedroom')">
                                 <span>Bedroom</span>
-                                <span class="dropdown-icon" id="essential-bedroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-essential-bedroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="essential-bedroom">
+                            <div class="package-dropdown" id="interior-essential-bedroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Wardrobe design</span>
@@ -904,11 +806,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('essential-kitchen')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-essential-kitchen')">
                                 <span>Kitchen</span>
-                                <span class="dropdown-icon" id="essential-kitchen-icon">+</span>
+                                <span class="dropdown-icon" id="interior-essential-kitchen-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="essential-kitchen">
+                            <div class="package-dropdown" id="interior-essential-kitchen">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Modular kitchen base</span>
@@ -929,11 +831,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('essential-bathroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-essential-bathroom')">
                                 <span>Bathroom</span>
-                                <span class="dropdown-icon" id="essential-bathroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-essential-bathroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="essential-bathroom">
+                            <div class="package-dropdown" id="interior-essential-bathroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Vanity design</span>
@@ -964,11 +866,11 @@
                     </div>
                     <div class="package-content">
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('premium-living')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-premium-living')">
                                 <span>Living Room</span>
-                                <span class="dropdown-icon" id="premium-living-icon">+</span>
+                                <span class="dropdown-icon" id="interior-premium-living-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="premium-living">
+                            <div class="package-dropdown" id="interior-premium-living">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Custom TV unit with storage</span>
@@ -993,11 +895,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('premium-bedroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-premium-bedroom')">
                                 <span>Bedroom</span>
-                                <span class="dropdown-icon" id="premium-bedroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-premium-bedroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="premium-bedroom">
+                            <div class="package-dropdown" id="interior-premium-bedroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Walk-in wardrobe</span>
@@ -1022,11 +924,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('premium-kitchen')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-premium-kitchen')">
                                 <span>Kitchen</span>
-                                <span class="dropdown-icon" id="premium-kitchen-icon">+</span>
+                                <span class="dropdown-icon" id="interior-premium-kitchen-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="premium-kitchen">
+                            <div class="package-dropdown" id="interior-premium-kitchen">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Premium modular kitchen</span>
@@ -1051,11 +953,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('premium-bathroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-premium-bathroom')">
                                 <span>Bathroom</span>
-                                <span class="dropdown-icon" id="premium-bathroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-premium-bathroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="premium-bathroom">
+                            <div class="package-dropdown" id="interior-premium-bathroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Designer vanity with storage</span>
@@ -1090,11 +992,11 @@
                     </div>
                     <div class="package-content">
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('luxury-living')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-luxury-living')">
                                 <span>Living Room</span>
-                                <span class="dropdown-icon" id="luxury-living-icon">+</span>
+                                <span class="dropdown-icon" id="interior-luxury-living-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="luxury-living">
+                            <div class="package-dropdown" id="interior-luxury-living">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Luxury entertainment unit</span>
@@ -1123,11 +1025,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('luxury-bedroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-luxury-bedroom')">
                                 <span>Bedroom</span>
-                                <span class="dropdown-icon" id="luxury-bedroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-luxury-bedroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="luxury-bedroom">
+                            <div class="package-dropdown" id="interior-luxury-bedroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Luxury walk-in wardrobe</span>
@@ -1156,11 +1058,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('luxury-kitchen')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-luxury-kitchen')">
                                 <span>Kitchen</span>
-                                <span class="dropdown-icon" id="luxury-kitchen-icon">+</span>
+                                <span class="dropdown-icon" id="interior-luxury-kitchen-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="luxury-kitchen">
+                            <div class="package-dropdown" id="interior-luxury-kitchen">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Luxury modular kitchen</span>
@@ -1189,11 +1091,11 @@
                         </div>
 
                         <div class="package-item">
-                            <button class="package-item-btn" onclick="toggleDropdown('luxury-bathroom')">
+                            <button class="package-item-btn" onclick="toggleDropdown('interior-luxury-bathroom')">
                                 <span>Bathroom</span>
-                                <span class="dropdown-icon" id="luxury-bathroom-icon">+</span>
+                                <span class="dropdown-icon" id="interior-luxury-bathroom-icon">+</span>
                             </button>
-                            <div class="package-dropdown" id="luxury-bathroom">
+                            <div class="package-dropdown" id="interior-luxury-bathroom">
                                 <div class="dropdown-item">
                                     <span class="bullet"></span>
                                     <span>Luxury vanity with marble top</span>
@@ -1240,6 +1142,7 @@
                 </p>
             </header>
 
+
             <div class="projects-grid">
                 <div class="project-card">
                     <img src="assets/construction1-B7wGf-A0.jpg" alt="Modern Villa Project" class="project-image" loading="lazy">
@@ -1252,6 +1155,7 @@
                     </div>
                 </div>
 
+            
                 <div class="project-card">
                     <img src="assets/interior2-nIWsTie3.jpg" alt="Luxury Apartment Project" class="project-image" loading="lazy">
                     <div class="project-content">
@@ -1272,11 +1176,150 @@
                             efficient space utilization.
                         </p>
                     </div>
+
+                </div>
+                
+                <!-- Additional Project Cards -->
+                <div class="project-card">
+                    <img src="assets/interior1.jpg" alt="Residential Interior Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Residential Makeover in Indiranagar</h3>
+                        <p class="project-description">
+                            End-to-end interior redesign focusing on space optimization and natural materials.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/ME1W5AUAiy6F.jpg" alt="Landscape Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Landscape & Garden at Jayanagar</h3>
+                        <p class="project-description">
+                            Outdoor landscaping project with native planting and low-maintenance irrigation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/QFrA1DXux5RZ.jpg" alt="Retail Interior Project" class="project-image" loading="lazy">
+                    <div class="project-content">
+                        <h3 class="project-title">Retail Fit-out in Indiranagar</h3>
+                        <p class="project-description">
+                            Retail space fit-out focused on customer flow and display-focused lighting.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <header class="section-header">
+                <span class="badge">About Anelia Designs</span>
+                <h2 class="section-title">
+                    Your Trusted Partner in <span class="text-gradient">Construction & Design</span>
+                </h2>
+                <p class="section-description">
+                    With years of expertise in construction and interior design, we create beautiful, high-quality homes tailored to your vision.
+                </p>
+            </header>
 
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expert Team</h3>
+                    <p class="feature-description">
+                        Licensed architects, skilled contractors, and creative interior designers working together.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quality Assurance</h3>
+                    <p class="feature-description">
+                        Premium materials, meticulous craftsmanship, and rigorous quality checks at every stage.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Timely Delivery</h3>
+                    <p class="feature-description">
+                        Efficient project management ensuring on-time completion without compromising quality.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-title">Why Choose Anelia Designs?</h3>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">End-to-End Solutions</h4>
+                                <p class="benefit-description">From architectural design to interior finishing, we handle everything.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Transparent Pricing</h4>
+                                <p class="benefit-description">Clear, upfront pricing with no hidden costs or surprises.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Local Expertise</h4>
+                                <p class="benefit-description">Extensive knowledge of local building codes and climatic conditions.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">10-Year Warranty</h4>
+                                <p class="benefit-description">Comprehensive warranty on structural work and waterproofing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/construction1-B7wGf-A0.jpg" alt="Modern construction project" class="rounded-image">
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
@@ -1328,7 +1371,7 @@
                         <div>
                             <h3 class="contact-title">Address</h3>
                             <p class="contact-link">
-                                6, N Park Rd, Nehru Nagar<br>
+                                6, N Park Rd, Seshadripuram<br>
                                 Bengaluru, Karnataka 560020
                             </p>
                         </div>
@@ -1336,7 +1379,7 @@
                 </div>
 
                 <div class="contact-form">
-                    <form class="form" onsubmit="handleFormSubmit(event)">
+                    <form id="contact-form" class="form">
                         <div class="form-group">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" id="name" name="name" class="form-input" required>
@@ -1391,7 +1434,7 @@
                         <h3 class="footer-brand-text">Anelia Designs</h3>
                     </div>
                     <p class="footer-description">
-                        Creating exceptional living spaces with quality construction and stunning interior design since 1997.
+                        Transforming spaces through expert construction and innovative interior design, creating functional and inspiring environments
                     </p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/aneliadesign" target="_blank" class="social-link" aria-label="Instagram">
@@ -1425,6 +1468,7 @@
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
                         <li><a href="#projects" class="footer-link">Projects</a></li>
                         <li><a href="#contact" class="footer-link">Contact</a></li>
                         <li><a href="tel:+919108867676" class="footer-link">Call Now</a></li>
@@ -1452,7 +1496,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            6, N Park Rd, Nehru Nagar, Bengaluru
+                            6, N Park Rd, Seshadripuram, Bengaluru
                         </p>
                     </div>
                 </div>
@@ -1475,7 +1519,86 @@
     </a>
 
     <!-- JavaScript -->
-    <script src="script.min.js"></script>
+        <script src="script.min.js"></script>
+
+        <!-- EmailJS SDK and form handler (user-provided keys) -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            (function(){
+                if(window.emailjs){
+                    emailjs.init("A7xpcnsTyAZ0hhUYV"); // user's public key
+                }
+            })();
+
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                // Ensure a time field is present for templates that use {{time}}
+                var form = this;
+                var timeInput = form.querySelector('input[name="time"]');
+                if (!timeInput) {
+                    timeInput = document.createElement('input');
+                    timeInput.type = 'hidden';
+                    timeInput.name = 'time';
+                    form.appendChild(timeInput);
+                }
+                timeInput.value = new Date().toLocaleString();
+
+                emailjs.sendForm("service_2skk8gd", "template_nkze7t9", form)
+                    .then(function() {
+                        showSuccessModal();
+                        form.reset();
+                    }, function(error) {
+                        alert("❌ Failed to send. Check console for details.");
+                        console.error("EmailJS Error:", error);
+                    });
+            });
+        </script>
+
 </body>
 </html>
+
+<!-- Success modal markup (inserted by script when needed) -->
+<div id="success-modal" style="display:none;" aria-hidden="true">
+    <div id="success-modal-overlay" style="display:none"></div>
+</div>
+
+<script>
+function showSuccessModal(){
+    // Remove existing if present
+    var existing = document.getElementById('success-modal-overlay');
+    if(existing && existing.parentNode) existing.parentNode.removeChild(existing);
+
+    var overlay = document.createElement('div');
+    overlay.id = 'success-modal-overlay';
+    // overlay will use CSS for visuals
+
+    var card = document.createElement('div');
+    card.className = 'success-card';
+
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'success-close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.innerHTML = '✕';
+    closeBtn.onclick = function(){ overlay.classList.add('success-fadeout'); setTimeout(()=>overlay.remove(),320); };
+
+    var title = document.createElement('h2');
+    title.className = 'success-title';
+    title.textContent = 'Thank you for connecting with Anelia Design Studio!';
+
+    var body = document.createElement('div');
+    body.className = 'success-body';
+    body.innerHTML = 'Your message has landed safely with us, and our team is excited to dive into your vision. We\'ll review your details carefully and reach out soon to start crafting the exceptional space you\'ve imagined.<br><br><strong>Together, let\'s build something extraordinary.</strong>';
+
+    card.appendChild(closeBtn);
+    card.appendChild(title);
+    card.appendChild(body);
+    overlay.appendChild(card);
+
+    document.body.appendChild(overlay);
+
+    // Auto-dismiss after 5s for a small, subtle pop
+    setTimeout(()=>{ if(document.body.contains(overlay)){ overlay.classList.add('success-fadeout'); setTimeout(()=>overlay.remove(),320); } }, 5000);
+}
+</script>
 

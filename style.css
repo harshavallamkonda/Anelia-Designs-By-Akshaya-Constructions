@@ -50,6 +50,18 @@ body {
     background-clip: text;
 }
 
+/* Ensure headings inside structural elements have an explicit font-size
+    so they don't unexpectedly change due to browser UA stylesheet updates. */
+section h1,
+article h1,
+nav h1,
+aside h1 {
+     /* modest default size; specific classes (e.g. .hero-title, .brand-text)
+         can override this with more specific selectors. */
+     font-size: 1.125rem;
+     line-height: 1.2;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
@@ -166,7 +178,6 @@ body {
     outline: 2px solid #fff;
     outline-offset: 2px;
 }
-}
 
 .icon {
     width: 1rem;
@@ -181,6 +192,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    /* restore original generous vertical spacing for the hero section */
+    padding: 3rem 0;
 }
 
 .hero-video {
@@ -262,24 +275,68 @@ img[loading="lazy"].loaded {
 
 /* Sections */
 .section {
-    padding: 3rem 0;
+    /* compact vertical spacing variant */
+    padding: 1rem 0;
     background-color: var(--background);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    /* compact header spacing */
+    margin-bottom: 1rem;
+}
+
+/* Extra spacing specifically between Hero and Services header */
+#services .section-header {
+    margin-top: 2rem;
 }
 
 .badge {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: var(--muted);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    font-size: 0.875rem;
+    position: relative;
+    padding: 0.45rem 0.9rem;
+    background: linear-gradient(180deg, rgba(192,160,128,0.06), rgba(160,128,96,0.03));
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: calc(var(--radius) * 1.1);
+    font-size: 0.95rem;
     margin-bottom: 1rem;
-    color: var(--foreground);
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    box-shadow: 0 2px 6px rgba(122,76,0,0.06);
+    transition: transform 180ms ease, box-shadow 180ms ease, background-position 600ms linear;
+}
+
+/* subtle accent glow using pseudo element (disabled when reduced motion requested) */
+.badge::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    z-index: -1;
+    border-radius: calc(var(--radius) * 1.1);
+    background: linear-gradient(90deg, rgba(192,160,128,0.08), rgba(160,128,96,0.06));
+    filter: blur(6px);
+    opacity: 0;
+    transition: opacity 220ms ease;
+}
+
+.badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(122,76,0,0.12);
+}
+
+.badge:hover::after {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .badge,
+    .badge::after {
+        transition: none;
+        transform: none;
+    }
+    .badge::after { opacity: 0; }
 }
 
 .section-title {
@@ -300,9 +357,9 @@ img[loading="lazy"].loaded {
 /* Feature Cards */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .feature-card {
@@ -364,7 +421,7 @@ img[loading="lazy"].loaded {
 
 .benefit-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center; /* center icon with the title/description */
     gap: 0.75rem;
 }
 
@@ -373,7 +430,7 @@ img[loading="lazy"].loaded {
     height: 1.5rem;
     color: var(--primary);
     flex-shrink: 0;
-    margin-top: 0.25rem;
+    margin-top: 0; /* remove manual nudge; centered via parent */
 }
 
 .benefit-title {
@@ -486,7 +543,6 @@ img[loading="lazy"].loaded {
     outline: 2px solid #fff;
     outline-offset: 2px;
 }
-}
 
 /* Packages Section */
 .packages-section {
@@ -501,6 +557,10 @@ img[loading="lazy"].loaded {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+
+     /* Prevent cards in the same row from stretching to the height of the tallest card.
+         This ensures only the clicked package card grows when its dropdown opens. */
+     align-items: start;
 }
 
 .package-card {
@@ -509,6 +569,9 @@ img[loading="lazy"].loaded {
     border-radius: var(--radius);
     overflow: hidden;
     transition: all 0.3s ease;
+
+    /* Ensure each card sizes to its own content rather than stretching in the grid row */
+    align-self: start;
 }
 
 .package-card:hover {
@@ -631,7 +694,7 @@ img[loading="lazy"].loaded {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -650,8 +713,26 @@ img[loading="lazy"].loaded {
 
 .project-image {
     width: 100%;
-    height: 250px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-image {
+        aspect-ratio: 4 / 3;
+    }
 }
 
 .project-content {
@@ -678,25 +759,26 @@ img[loading="lazy"].loaded {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    /* compact: smaller gaps to reduce wasted space */
+    gap: 1rem;
     align-items: start;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.75rem;
 }
 
 .contact-item {
     display: flex;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items: center; /* vertically center icon with text */
+    gap: 0.85rem; /* small increase for breathing room */
 }
 
 .contact-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2.25rem;
+    height: 2.25rem;
     color: var(--primary);
     flex-shrink: 0;
 }
@@ -710,7 +792,7 @@ img[loading="lazy"].loaded {
     font-family: 'Playfair Display', serif;
     font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: var(--foreground);
 }
 
@@ -726,13 +808,13 @@ img[loading="lazy"].loaded {
 
 .contact-form {
     background: var(--card);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: var(--radius);
     border: 1px solid var(--border);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .form-label {
@@ -749,6 +831,8 @@ img[loading="lazy"].loaded {
     background-color: var(--input);
     color: var(--foreground);
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .form-input:focus {
@@ -763,47 +847,49 @@ img[loading="lazy"].loaded {
 /* Footer */
 .footer {
     background-color: var(--card);
-    padding: 2.5rem 0 1.5rem;
+    /* compact footer spacing */
+    padding: 1.25rem 0 1rem;
     border-top: 1px solid var(--border);
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* tighter column gaps for compact footer */
+    gap: 1rem;
 }
 
 .footer-section {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-brand {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer-logo {
-    height: 2.5rem;
+    height: 2rem;
     width: auto;
 }
 
 .footer-brand-text {
     font-family: 'Playfair Display', serif;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--foreground);
 }
 
 .footer-description {
     color: var(--muted-foreground);
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .social-link {
@@ -822,9 +908,9 @@ img[loading="lazy"].loaded {
 
 .footer-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .footer-links {
@@ -833,7 +919,7 @@ img[loading="lazy"].loaded {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .footer-link {
@@ -849,13 +935,13 @@ img[loading="lazy"].loaded {
 .footer-contact {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem; /* tightened spacing between contact lines */
 }
 
 .footer-contact-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem; /* slightly smaller gap between icon and text */
     color: var(--muted-foreground);
 }
 
@@ -866,14 +952,14 @@ img[loading="lazy"].loaded {
 }
 
 .footer-bottom {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
 .footer-divider {
     height: 1px;
     background-color: var(--border);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer-copyright {
@@ -951,7 +1037,7 @@ img[loading="lazy"].loaded {
     }
     
     .contact-content {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     }
 }
 
@@ -982,6 +1068,83 @@ img[loading="lazy"].loaded {
     .whatsapp-float svg {
         width: 25px;
         height: 25px;
+    }
+}
+
+/* Scroll-driven glow: applied to body while user is actively scrolling.
+   Implemented with JS using requestAnimationFrame and a short timeout so
+   it doesn't run continuously and remains high-performance. */
+.scroll-glow .btn-primary,
+.scroll-glow .view-packages-btn,
+.scroll-glow .whatsapp-float {
+    /* Use a subtle layered box-shadow for a glow effect that paints on the compositor */
+    box-shadow: 0 6px 20px rgba(122,76,0,0.12), 0 0 18px rgba(192,160,128,0.14);
+    transform: translateY(-2px);
+    will-change: transform, box-shadow;
+}
+
+/* Success modal for contact form - compact, themed to site */
+#success-modal-overlay{
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(6,10,14,0.22); /* subtle backdrop */
+    z-index: 9999;
+    animation: modal-backdrop-in .24s ease-out;
+}
+.success-card{
+    width: min(420px, calc(100% - 32px));
+    background: var(--card);
+    color: var(--foreground);
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+    transform: translateY(6px) scale(1);
+    animation: modal-pop .28s cubic-bezier(.16,.9,.33,1) forwards;
+    text-align: left;
+    border: 1px solid var(--border);
+    position: relative;
+    font-family: inherit; /* use page body font */
+}
+.success-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: var(--foreground);
+}
+.success-body{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--muted-foreground);
+}
+.success-close{
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background: transparent;
+    border: 0;
+    color: var(--muted-foreground);
+    font-size: 1rem;
+    cursor: pointer;
+}
+@keyframes modal-pop{
+    from{transform:translateY(6px) scale(.995);opacity:0}
+    60%{transform:translateY(-4px) scale(1.01);opacity:1}
+    to{transform:translateY(0) scale(1);opacity:1}
+}
+@keyframes modal-backdrop-in{from{background:rgba(6,10,14,0)}to{background:rgba(6,10,14,0.22)}}
+.success-fadeout{animation:modal-fade .32s ease-in forwards}
+@keyframes modal-fade{to{opacity:0;transform:translateY(4px) scale(.995)}}
+
+/* Reduce motion for users who request it */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-glow .btn-primary,
+    .scroll-glow .view-packages-btn,
+    .scroll-glow .whatsapp-float {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transform: none;
+        will-change: auto;
     }
 }
 
